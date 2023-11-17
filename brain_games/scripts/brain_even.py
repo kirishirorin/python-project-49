@@ -8,7 +8,7 @@ def main():
     print(f'Hello, {name}!')
     print('Answer "yes" if the number is even, otherwise answer "no".')
     correct_answers = 0
-    while correct_answers <= 3:
+    while correct_answers < 3:
         number_rand = randint(1, 100)
         print(f'Question: {number_rand}')
         answer = prompt.string('Your answer: ')
@@ -33,3 +33,7 @@ def main():
             print(f"Let's try again, {name}!")
             correct_answers = 1
     print(f"Congratulations, {name}!")
+
+
+if __name__ == '__main__':
+    main()
