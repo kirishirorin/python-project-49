@@ -5,3 +5,4 @@
 
 brain-even = (https://asciinema.org/a/0MIaG6R08ZGmEFexQ3UGdDmrs)
 brain-calc = (https://asciinema.org/a/SusydqLaZ4PaadntlP8fCi30l)
+brain-gcd = (https://asciinema.org/a/nCgAvBA0cRQviURbTk7232HHn)
