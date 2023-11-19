@@ -19,7 +19,11 @@ def main():
             progres.append(i + rand_defferent)
         correct_answer = progres[rand_place]
         progres[rand_place] = '..'
-        print(f'Question: {progres[0:rand_len]}')
+        progres = progres[0:rand_len]
+        progres_str = ''
+        for i in progres:
+            progres_str += str(i) + ' '
+        print('Question: ' + progres_str.strip())
         answer = prompt.integer("Your answer: ")
         if answer == correct_answer:
             print("Correct!")
