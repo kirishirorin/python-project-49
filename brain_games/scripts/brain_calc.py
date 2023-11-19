@@ -29,8 +29,9 @@ def main():
         else:
             print(f'{str(answer)} is wrong answer ;(. Correct answer was {str(correct_answer)}.')
             print(f"Let's try again, {name}!")
-            correct_answers = 0
-    print(f"Congratulations, {name}!")
+            break
+    if correct_answers == 3:
+        print(f"Congratulations, {name}!")
 
 if __name__ == '__main__':
     main()
