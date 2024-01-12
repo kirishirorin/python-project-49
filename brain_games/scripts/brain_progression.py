@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 import prompt
 from random import randint
-import brain_games.scripts.brain_games
 
 
 def main():
-    brain_games.scripts.brain_games.main()
+    print("Welcome to the Brain Games!")
+    name = prompt.string('May I have your name? ')
+    print(f'Hello, {name}!')
     print('What number is missing in the progression?')
     correct_answers = 0
     while correct_answers < 3:
