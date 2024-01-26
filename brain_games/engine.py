@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import prompt
 
 
@@ -6,9 +5,11 @@ def run(game):
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
+    print(game.QUESTION)
     correct_answers = 0
     while correct_answers != 3:
-        game.game_round() # Выводится question и corrent_answer
+        expression, correct_answer = game.game_round() # Выводится expression и corrent_answer
+        print(expression)
         answer = prompt.integer('Your answer: ')
         if answer == correct_answer:
             print("Correct!")
@@ -20,7 +21,3 @@ def run(game):
             break
     if correct_answers == 3:
         print(f"Congratulations, {name}!")
-
-
-if __name__ == '__main__':
-    run(game)
