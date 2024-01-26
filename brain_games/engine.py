@@ -8,9 +8,9 @@ def run(game):
     print(game.QUESTION)
     correct_answers = 0
     while correct_answers != 3:
-        expression, correct_answer = game.game_round() # Выводится expression и corrent_answer
+        expression, correct_answer = game.game_round() # Выводится expression и correct_answer
         print(expression)
-        answer = prompt.integer('Your answer: ')
+        answer = prompt.string('Your answer: ')
         if answer == correct_answer:
             print("Correct!")
             correct_answers += 1

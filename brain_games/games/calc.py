@@ -11,12 +11,12 @@ def game_round():
         case 1:
             expression = f'Question: {rand_num_1} + {rand_num_2}'
             correct_answer = rand_num_1 + rand_num_2
-            return expression, correct_answer
+            return expression, str(correct_answer)
         case 2:
             expression = f'Question: {rand_num_1} - {rand_num_2}'
             correct_answer = rand_num_1 - rand_num_2
-            return expression, correct_answer
+            return expression, str(correct_answer)
         case 3:
             expression = f'Question: {rand_num_1} * {rand_num_2}'
             correct_answer = rand_num_1 * rand_num_2
-            return expression, correct_answer
+            return expression, str(correct_answer)
