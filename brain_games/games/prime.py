@@ -1,7 +1,7 @@
 from random import randint
 
 
-QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no"'
+QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def game_round():
     rand_num_1 = randint(1, 100)
