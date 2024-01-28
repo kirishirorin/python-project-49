@@ -8,7 +8,7 @@ def run(game):
     print(game.QUESTION)
     correct_answers = 0
     while correct_answers != 3:
-        expression, correct_answer = game.game_round() # Выводится expression и correct_answer
+        expression, correct_answer = game.game_round()
         print(expression)
         answer = prompt.string('Your answer: ')
         if answer == correct_answer:

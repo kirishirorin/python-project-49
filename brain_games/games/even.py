@@ -3,6 +3,7 @@ from random import randint
 
 QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
+
 def game_round():
     number_rand = randint(1, 100)
     expression = f'Question: {number_rand}'

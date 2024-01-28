@@ -3,6 +3,7 @@ from random import randint
 
 QUESTION = 'What number is missing in the progression?'
 
+
 def game_round():
     rand_num_1 = randint(1, 100)
     rand_defferent = randint(1, 100)

@@ -3,6 +3,7 @@ from random import randint
 
 QUESTION = 'What is the result of the expression?'
 
+
 def game_round():
     rand_num_1 = randint(1, 100)
     rand_num_2 = randint(1, 100)

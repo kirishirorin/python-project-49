@@ -13,7 +13,8 @@ def check_answer(name, answer, correct_answer, correct_answers, point):
         print("Correct!")
         correct_answers += 1
     else:
-        print(f'{str(answer)} is wrong answer ;(. Correct answer was {str(correct_answer)}.')
+        print(f'{str(answer)} is wrong answer ;(.'
+              f'Correct answer was {str(correct_answer)}.')
         print(f"Let's try again, {name}!")
         point += 1
 
