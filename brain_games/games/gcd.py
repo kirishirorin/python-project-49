@@ -6,6 +6,7 @@ QUESTION = 'Find the greatest common divisor of given numbers.'
 START_NUM = 1
 END_NUM = 100
 
+
 def generate_round(start_expression):
     rand_num_1 = randint(START_NUM, END_NUM)
     rand_num_2 = randint(START_NUM, END_NUM)

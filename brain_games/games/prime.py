@@ -5,6 +5,7 @@ QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 START_NUM = 1
 END_NUM = 100
 
+
 def is_prime(rand_num_1):
     list_num = []
     for i in range(1, rand_num_1 + 1):

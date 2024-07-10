@@ -5,6 +5,7 @@ QUESTION = 'What is the result of the expression?'
 START_NUM = 1
 END_NUM = 100
 
+
 def generate_round(start_expression):
     rand_num_1 = random.randint(START_NUM, END_NUM)
     rand_num_2 = random.randint(START_NUM, END_NUM)

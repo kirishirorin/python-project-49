@@ -5,6 +5,7 @@ QUESTION = 'What number is missing in the progression?'
 START_NUM = 1
 END_NUM = 100
 
+
 def generate_round(start_expression):
     rand_num_1 = randint(START_NUM, END_NUM)
     rand_defferent = randint(START_NUM, END_NUM)
