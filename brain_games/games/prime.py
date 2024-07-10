@@ -6,7 +6,6 @@ START_NUM = 1
 END_NUM = 100
 
 def is_prime(rand_num_1):
-    rand_num_1 = randint(START_NUM, END_NUM)
     list_num = []
     for i in range(1, rand_num_1 + 1):
         if rand_num_1 % i == 0:
