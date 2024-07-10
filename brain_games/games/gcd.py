@@ -1,15 +1,14 @@
 from random import randint
+import math
 
 
 QUESTION = 'Find the greatest common divisor of given numbers.'
+START_NUM = 1
+END_NUM = 100
 
-
-def game_round():
-    rand_num_1 = randint(1, 100)
-    rand_num_2 = randint(1, 100)
-    expression = f'Question: {rand_num_1} {rand_num_2}'
-    for i in range(max(rand_num_1, rand_num_2), 0, -1):
-        if (rand_num_1 % i == 0) and (rand_num_2 % i == 0):
-            correct_answer = str(i)
-            break
+def generate_round(start_expression):
+    rand_num_1 = randint(START_NUM, END_NUM)
+    rand_num_2 = randint(START_NUM, END_NUM)
+    expression = f'{start_expression}: {rand_num_1} {rand_num_2}'
+    correct_answer = str(math.gcd(rand_num_1, rand_num_2))
     return expression, correct_answer
