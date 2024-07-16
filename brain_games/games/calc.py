@@ -6,11 +6,11 @@ START_NUM = 1
 END_NUM = 100
 
 
-def generate_round(start_expression):
+def generate_round():
     rand_num_1 = random.randint(START_NUM, END_NUM)
     rand_num_2 = random.randint(START_NUM, END_NUM)
     operator = random.choice(['+', '-', '*'])
-    expression = f'{start_expression}: {rand_num_1} {operator} {rand_num_2}'
+    expression = f'{rand_num_1} {operator} {rand_num_2}'
     if operator == '+':
         correct_answer = rand_num_1 + rand_num_2
     elif operator == '-':

@@ -7,11 +7,11 @@ END_NUM = 100
 
 
 def is_even(number_rand):
-    return 'yes' if number_rand % 2 == 0 else 'no'
+    return True if number_rand % 2 == 0 else False
 
 
-def generate_round(start_expression):
+def generate_round():
     number_rand = randint(START_NUM, END_NUM)
-    expression = f'{start_expression}: {number_rand}'
-    correct_answer = is_even(number_rand)
+    expression = f'{number_rand}'
+    correct_answer = 'yes' if is_even(number_rand) else 'no'
     return expression, correct_answer
